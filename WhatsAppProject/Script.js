@@ -5,7 +5,7 @@ var LogInDialog;
 var SignUpDialog;
 var CurrentUser;
 
-(function(){
+/*(function(){
 	$.post("WindowIsAlive.php",
 				 {
 		username: getCookie("Username"),
@@ -15,7 +15,7 @@ var CurrentUser;
 		console.log("result= " + result + "; status= " + status);
 	});
 	setTimeout(arguments.callee, 100);
-})();
+})();*/
 
 $(document).ready(function () {
 	$( "#menu" ).menu();
