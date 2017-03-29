@@ -1,0 +1,123 @@
+body{
+	background-color: #dfdfdf;
+}
+
+#greenbar{
+	position: fixed;
+    z-index: -1;
+    background-color: #009688;
+    width: 100%;
+    height: 127px;
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+label, input {
+		display:block; 
+}
+
+input.text { 
+		margin-bottom:12px; 
+		width:95%; 
+		padding: .4em; 
+}
+
+fieldset {
+		padding:0; 
+		border:0; 
+		margin-top:25px; 
+}
+
+h1 { 
+		font-size: 1.2em; 
+		margin: .6em 0; 
+}
+
+.ui-dialog .ui-state-error { 
+		padding: .3em;
+}
+
+.validateTips { 
+		border: 1px solid transparent; 
+		padding: 0.3em; 
+}
+
+#container{
+		background-color: transparent;
+		width: 1396px;
+    height: 900px;
+    margin: 0 auto;
+		margin-top: 25px;
+    top: 19px;
+    border-radius: 3px;
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06), 0 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+#OnlineUser-Panel{
+	background-color: #dfdfdf;
+	float: left;
+	height: 100%;
+	width: 418.8px;
+}
+
+#MessageWindow{
+	background-color: #f7f9fa;
+	float: right;
+	height: 100%;
+	width: 977.188px;
+}
+
+#User-Panel{
+	display: flex;
+	width: 100%;
+	padding: 15px;
+	height: 94px;
+	border: 1px solid #CFCFCF;
+}
+
+.User-Avatar{
+	flex: 1;
+	display: flex;
+}
+
+#UserName{
+	flex: 1;
+	margin-left: 20px;
+}
+
+#UserName p{
+	font-size: 30px;
+	font-family: fantasy;
+}
+
+#User-Avatar-image{
+	height: 96px;
+	width: 96px;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+#ChatList{
+	height: 92%;
+	width: 100%;
+}
+
+.User-Menu:after {
+	content: '\2807';
+  font-size: 35px;
+	margin-right: 30px;
+}
+
+#menu{
+	border: 0px;
+	background-color: #dfdfdf;
+}
+
+.ui-icon{
+	width: 0px;
+}
+
+#myImage{
+	border-radius: 10px;
+}

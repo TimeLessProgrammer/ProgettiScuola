@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="google-signin-client_id" content="28806341571-2n9betufpo1t1tijdc8jjqhu56nt594v.apps.googleusercontent.com">
+		<title>XMLHttpRequest</title>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+		<script src="Script.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="Style.css">
+	</head>
+	<body id="body">
+    <div id="greenbar"></div>
+		<div id="LogInForm" title="Accedi">
+ 			<form>
+    		<fieldset>
+					<lable for="UIDColor">Colore Utente</lable>
+					<input type="color" name="colorUID" id="clpUID" value="#00F800" class="text ui-widget-content ui-corner-all">
+     			<label for="name">Username</label>
+     			<input type="text" name="username" id="txtUID" value="" class="text ui-widget-content ui-corner-all">
+     			<!--Allow form submission with keyboard without duplicating the dialog button-->
+					<div class="g-signin2" data-onsuccess="onSignIn" style="float: right"></div>
+    		</fieldset>
+  		</form>
+		</div>
+		<div id="container">
+			<div id="OnlineUser-Panel">
+				<header id="User-Panel">
+						<div class="User-Avatar">
+							<div id="User-Avatar-image"></div>
+							<div id="UserName"></div>
+						</div>
+						<ul id="menu">
+							<li>
+								<div class="User-Menu"></div>
+								<ul>
+									<li><div id="Disconnect" onclick="LogOut()">Disconnettiti</div></li>
+								</ul>
+							</li>
+						</ul>
+				</header>
+				<div id="ChatList">
+				</div>
+			</div>
+			<div id="MessageWindow">
+			</div>
+		</div> 
+		 
+	</body>
+</html>
